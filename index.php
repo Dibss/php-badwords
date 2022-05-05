@@ -2,7 +2,7 @@
 
 $paragraph = "Lorem ipsum dolor sit amet parola consectetur adipisicing elit. Laboriosam parola corporis at cum perferendis voluptatibus officiis tempora sapiente parola odio, minima debitis vel voluptas earum consequatur. Officia mollitia consequuntur eos dicta at!";
 
-$parolaCensurata = $_GET['censura'];
+$parolaCensurata = (isset($_GET['censura'])) ? $_GET['censura'] : '';
 
 $paragrafoCensurato = str_replace($parolaCensurata, '***', $paragraph);
 
